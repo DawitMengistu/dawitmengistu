@@ -86,18 +86,22 @@ body {
     background-color: var(--bg-main);
     box-sizing: border-box;
 }
+
 .con {
     max-width: 800px;
     /* background-color: antiquewhite; */
     margin-inline: auto;
 }
+
 .gap {
     height: 20px;
 }
+
 p {
     padding: 0;
     margin: 0;
 }
+
 a {
     color: #1772d0;
     text-decoration: none;
@@ -106,7 +110,8 @@ a {
 .lato {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
 }
-.italic{
+
+.italic {
     font-style: italic;
 }
 
@@ -116,6 +121,7 @@ a {
     padding-block: 14px;
     font-size: 32px;
 }
+
 .t-2 {
     padding-block: 14px;
     font-size: 22px;
@@ -125,6 +131,7 @@ a {
     padding-block: 14px;
     font-size: 14px;
 }
+
 .t-1-a {
     padding-block: 14px;
     font-size: 14px;
@@ -142,6 +149,7 @@ a {
 .b-p-0 {
     padding-bottom: 0;
 }
+
 .t-p-0 {
     padding-top: 0;
 }
@@ -151,17 +159,20 @@ a {
     grid-template-columns: 70% 1fr;
     padding-top: 2.5%;
 }
+
 .single-work {
     display: grid;
     grid-template-columns: 20% 1fr;
     gap: 30px;
 }
+
 .work-img {
     width: 90%;
 }
+
 .profile-img {
     width: 100%;
-} 
+}
 
 .p-text {}
 
@@ -170,24 +181,27 @@ a {
     grid-template-columns: 60% 1fr;
     margin-block: 15px;
 }
-.contact-a a{
+
+.contact-a a {
     margin-inline: 5px;
 }
-.thoughts{
+
+.thoughts {
     text-align: end;
 }
 
 .piano-con {
     width: 70px;
     display: grid;
-    grid-template-columns: repeat(7,auto);
+    grid-template-columns: repeat(7, auto);
     position: relative;
 }
+
 .white-key {
     background-color: white;
     border: solid 2px gray;
     height: var(--key-white-height);
-    width: var(--key-white-width-one);    
+    width: var(--key-white-width-one);
     border-radius: 2px;
 }
 
@@ -200,18 +214,118 @@ a {
     border-radius: 2px;
 }
 
-.b-1{
+.b-1 {
     left: calc(var(--key-white-width-one) - var(--key-black-width)/2);
 }
-.b-2{
+
+.b-2 {
     left: 26px;
 }
-.b-3{
+
+.b-3 {
     left: 42px;
 }
-.b-4{
+
+.b-4 {
     left: 75px;
 }
-.b-5{
+
+.b-5 {
     left: 93px;
+}
+
+.white-key:hover {
+    background-color: rgb(224, 224, 129);
+}
+
+.black-key:hover {
+    background-color: rgb(68, 68, 68);
+}
+
+.int-con {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.single-int {
+    width: auto;
+    padding: 15px;
+}
+
+/* ---------------------------------- */
+
+.keyboard-con {
+    width: auto;
+    height: 90px;
+    /* background-color: #1772d0; */
+}
+
+.keyboard-key {
+    border: solid 1px black;
+    border-radius: 2px;
+    background-color: white;
+    box-shadow: inset 0 0 1px 2px  rgba(128, 128, 128, 0.452);
+}
+
+
+.k-s-1 {
+
+    display: grid;
+    grid-template-columns: repeat(16, auto);
+    height: calc(100%/6);
+}
+.k-s-2 {
+    display: grid;
+    grid-template-columns: repeat(16, auto);
+    height: calc(100%/6);
+}
+.k-s-3 {
+    display: grid;
+    grid-template-columns: repeat(64, auto);
+    height: calc(100%/6);
+}
+.k-s-4 {
+    display: grid;
+    grid-template-columns: repeat(64, auto);
+    height: calc(100%/6);
+}
+.k-s-5 {
+    display: grid;
+    grid-template-columns: repeat(64, auto);
+    height: calc(100%/6);
+}
+.k-s-6 {
+    display: grid;
+    grid-template-columns: repeat(64, auto);
+    height: calc(100%/6);
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
+.span-3 {
+    grid-column: span 3;
+}
+.span-4 {
+    grid-column: span 4;
+}
+.span-5 {
+    grid-column: span 5;
+}
+.span-6 {
+    grid-column: span 6;
+}
+.span-7 {
+    grid-column: span 7;
+}
+.span-8 {
+    grid-column: span 8;
+}
+
+.span-9 {
+    grid-column: span 9;
+}
+.span-12 {
+    grid-column: span 28;
 }
