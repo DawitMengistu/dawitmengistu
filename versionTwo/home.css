@@ -329,3 +329,7 @@ a {
 .span-12 {
     grid-column: span 28;
 }
+
+.clicked {
+    background-color: black;
+}
