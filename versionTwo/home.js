@@ -13,27 +13,15 @@ let arr = ["Escape", "F1", "F2", "F3", "F4", "F5", "F6", "F8", "F9", "F10", "F11
     "Control", "Meta", "Alt", " ", "", "", "", "ArrowLeft", "ArrowDown", "ArrowRight"
 ];
 let str = "";
-
 document.addEventListener("keyup", function (event) {
     console.log("You pressed:", event.key);
-    if (!arr.includes(event.key)) {
-        str += '"' + event.key + '"' + ", ";
-        console.log(str)
+    if (arr.includes(event.key)) {
+        removeAllClicked();
+        addClick(arr.indexOf(event.key));
     }
 });
 
-window.addEventListener("scroll", (event) => {
-    const scrollY = window.scrollY;
-    if (window.scrollY > 276) {
-        document.addEventListener("keyup", function (event) {
-            console.log("You pressed:", event.key);
-            if (arr.includes(event.key)) {
-                removeAllClicked();
-                addClick(arr.indexOf(event.key));
-            }
-        });
-    }
-});
+
 function removeAllClicked() {
     const allKeys = document.querySelectorAll(".keyboard-key");
     if (allKeys.length)

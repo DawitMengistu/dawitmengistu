@@ -1,5 +1,20 @@
-
-.nav-bar {
+.tittle-bar {
     height: 160px;
-    background-color: green;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.tittle-img {
+    width: 100%;
+    opacity: 0.6;
+}
+
+.tittle-text {
+    font-size: 45px;
+    font-weight: bold;
+    left: 15px;
+    bottom: 15px;
+    color: white;
+    position: absolute;
 }
