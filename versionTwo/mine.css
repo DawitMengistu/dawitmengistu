@@ -1,0 +1,178 @@
+.hide {
+    display: none !important;
+}
+
+.game-con {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.mine-game-con {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+}
+
+.section-one-mine {
+    background-color: #234055;
+    padding-block: 10px;
+}
+
+.section-two-mine {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #0F212E;
+    padding-bottom: 20px;
+}
+
+.mine-grid-con {
+    /* width: 100%;
+    height: 100%; */
+    width: 250px;
+    height: 250px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 10px;
+}
+
+.single-grid-shadow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #213743;
+    border-radius: 2px;
+}
+
+.single-grid-el {
+    border-radius: 2px;
+    width: 100%;
+    height: 93%;
+    background-color: #2F4553;
+}
+
+.single-grid-shadow:hover {
+    cursor: pointer;
+    background-color: #213743;
+    transition: all 240ms ease;
+    transform: translateY(-2px);
+}
+
+.single-grid-shadow:hover .single-grid-el {
+    background-color: #557086;
+    transition: all 240ms ease;
+    transform: translateY(-2px);
+}
+
+.up {
+    transition: all 600ms ease;
+    transform: translateY(-2px) !important;
+}
+
+.down {
+    transition: all 600ms ease;
+    transform: translateY(2px) !important;
+}
+
+.selected {
+    background-color: #557086;
+}
+
+.animation {
+    animation: pressed 300ms ease infinite alternate;
+}
+
+.gold-img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    /* Automatically adjusts the height to maintain aspect ratio */
+    object-fit: cover;
+    animation: blur 300ms ease;
+}
+
+.bomb-img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    /* Automatically adjusts the height to maintain aspect ratio */
+    object-fit: cover;
+    animation: blur 300ms ease;
+}
+
+.number-mine-con {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: white;
+    background-color: #0F212E;
+    margin-inline: 8px;
+}
+.mine-num-con:hover {
+    cursor: pointer;
+}
+.mine-num-con {
+    margin-block: 3px;
+    margin-inline: 2px;
+    padding: 5px;
+    background-color: #0F212E;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.mine-num-active {
+    background-color: #234055;
+}
+.play-btn-con {
+  width: 100%;
+  text-align: center;
+}
+.play-btn:hover {
+    cursor: pointer;
+    background-color: #355875;
+}
+
+.play-btn {
+    letter-spacing: 2px;
+    border: none;
+    color: white;
+    width: 93%;
+    background-color: #4287c0 ;
+    padding: 10px 5px;
+    border-radius: 2px;
+    margin-top: 10px;
+    margin-inline: auto;
+    /* position: absolute;
+    left: 5%;
+    bottom: 10px; */
+}
+
+
+@keyframes blur {
+    0% {
+        filter: blur(20px);
+    }
+
+    100% {
+        filter: blur(0);
+    }
+}
+
+@keyframes pressed {
+    0% {
+        transform: translateY(2px);
+    }
+
+    100% {
+        transform: translateY(-2px);
+    }
+}

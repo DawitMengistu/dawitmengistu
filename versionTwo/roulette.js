@@ -6,7 +6,7 @@ rouletteNums.reverse();
 
 setInterval(() => {
     rotateOnNum(Math.floor(Math.random() * 30));
-}, 20000);
+}, 30000);
 
 
 setTimeout(() => {

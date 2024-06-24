@@ -80,6 +80,8 @@
     --key-black-width: 5px;
 }
 
+
+
 body {
     margin: 0;
     padding: 0;
@@ -106,6 +108,7 @@ a {
     color: #1772d0;
     text-decoration: none;
 }
+
 a:hover {
     cursor: pointer;
 }
@@ -113,6 +116,7 @@ a:hover {
 .lato {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
 }
+
 
 .italic {
     font-style: italic;
@@ -128,11 +132,13 @@ a:hover {
 .t-2 {
     padding-block: 14px;
     font-size: 22px;
+    font-weight: 600;
 }
 
 .t-4 {
+    color: #242424;
     padding-block: 14px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .t-1-a {
@@ -177,7 +183,9 @@ a:hover {
     width: 100%;
 }
 
-.p-text {}
+.p-text {
+    line-height: 25px;
+}
 
 .sec-four {
     display: grid;
@@ -250,6 +258,7 @@ a:hover {
     grid-template-columns: auto auto auto;
     width: 80%;
 }
+
 .int-tittle {
     width: auto;
 }
@@ -271,7 +280,7 @@ a:hover {
     border: solid 1px rgba(0, 0, 0, 0.514);
     /* border-radius: 1px; */
     background-color: white;
-    box-shadow: inset 0 0 1px 1px  rgba(128, 128, 128, 0.452);
+    box-shadow: inset 0 0 1px 1px rgba(128, 128, 128, 0.452);
 }
 
 
@@ -281,26 +290,31 @@ a:hover {
     grid-template-columns: repeat(16, auto);
     height: calc(100%/6);
 }
+
 .k-s-2 {
     display: grid;
     grid-template-columns: repeat(16, auto);
     height: calc(100%/6);
 }
+
 .k-s-3 {
     display: grid;
     grid-template-columns: repeat(64, auto);
     height: calc(100%/6);
 }
+
 .k-s-4 {
     display: grid;
     grid-template-columns: repeat(64, auto);
     height: calc(100%/6);
 }
+
 .k-s-5 {
     display: grid;
     grid-template-columns: repeat(64, auto);
     height: calc(100%/6);
 }
+
 .k-s-6 {
     display: grid;
     grid-template-columns: repeat(64, auto);
@@ -314,18 +328,23 @@ a:hover {
 .span-3 {
     grid-column: span 3;
 }
+
 .span-4 {
     grid-column: span 4;
 }
+
 .span-5 {
     grid-column: span 5;
 }
+
 .span-6 {
     grid-column: span 6;
 }
+
 .span-7 {
     grid-column: span 7;
 }
+
 .span-8 {
     grid-column: span 8;
 }
@@ -333,6 +352,7 @@ a:hover {
 .span-9 {
     grid-column: span 9;
 }
+
 .span-12 {
     grid-column: span 28;
 }
@@ -340,6 +360,7 @@ a:hover {
 .clicked {
     background-color: black;
 }
+
 .bb-gif {
     width: 80px;
     height: auto;

@@ -11,10 +11,20 @@
 }
 
 .tittle-text {
-    font-size: 45px;
+    font-size: 30px;
     font-weight: bold;
     left: 15px;
     bottom: 15px;
     color: white;
     position: absolute;
+}
+
+.gif-section {
+    border-radius: 6px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.gif {
+    width: 90%;
 }
