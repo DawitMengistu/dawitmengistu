@@ -1,0 +1,78 @@
+:root {
+    --width: 200px;
+}
+
+.roulette-container,
+.stat-container {
+    right: 0;
+    bottom: -80%;
+    position: absolute;
+    /* height: 100vh; */
+    /* background-color: bisque; */
+}
+
+.roulette-container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+}
+
+.roulette-around {
+    border: solid 7px #192F22;
+    border-radius: 50%;
+    padding: 7px;
+    position: relative;
+}
+
+
+.pointer {
+    position: relative;
+    z-index: 2;
+}
+
+.magnify {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: calc(50% - 20px);
+    transform: scale(1.4);
+    border: solid 2px #DAA153;
+    box-shadow: 0.1rem 0.2rem 0.5rem 0.1rem rgba(8, 8, 8, .77), inset 0 0.1rem 0.7rem 0 rgba(0, 0, 0, .88);
+    overflow: hidden;
+}
+
+.pointer-img {
+    position: absolute;
+    right: calc(50% - 15px);
+    width: 30px;
+    top: -33px;
+    rotate: 180deg;
+}
+
+.glass {
+    width: 50%;
+    object-fit: cover;
+}
+
+
+.magnified-img {
+    position: absolute;
+    right: calc(50% - 125px);
+    top: 7px;
+    width: calc(var(--width) + 50px);
+    opacity: 1;
+    z-index: -3;
+    rotate: 126.49deg;
+}
+
+
+
+
+.roulette-img {
+    width: var(--width);
+    z-index: 1;
+    rotate: 126.49deg;
+}

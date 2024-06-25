@@ -1,0 +1,19 @@
+
+.top-logo-con {
+   /* display: grid;
+   grid-template-columns: auto 1fr;
+   align-items: end; */
+   position: absolute;
+   bottom: 0px;
+   right: 20px;
+}
+
+.top-logo  {
+    width: 250px;
+}
+
+
+.tittle-img {
+    width: 100%;
+    opacity: 0.4;
+}

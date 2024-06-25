@@ -1,0 +1,42 @@
+.tittle-bar {
+    height: 160px;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.tittle-img {
+    width: 100%;
+    opacity: 0.6;
+}
+
+.tittle-text {
+    font-size: 30px;
+    font-weight: bold;
+    left: 15px;
+    bottom: 15px;
+    color: white;
+    position: absolute;
+}
+
+.gif-section {
+    /* border-radius: 6px; */
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gif {
+    width: 90%;
+    background-color: green;
+    /* height: 100%; */
+}
+
+.gif img {
+    width: auto;
+    height: 100%;
+    /* width: 90%;
+    height: fit-content; */
+}
