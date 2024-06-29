@@ -81,7 +81,6 @@
 }
 
 
-
 body {
     margin: 0;
     padding: 0;
@@ -392,9 +391,69 @@ a:hover {
     width: 80px;
     height: auto;
 }
+
 .links-con {
     font-style: italic;
     font-size: 15px;
     font-weight: 700;
     padding-top: 8px;
+}
+
+@media screen and (max-width: 917px) {
+    .hide-gap {
+        display: none;
+    }
+
+    .landing-area {
+        margin: 20px;
+        margin-top: 0;
+        grid-template-columns: 1fr;
+    }
+
+    .landing-text {
+        font-size: 14px;
+    }
+
+    .sec-two {
+        display: none;
+    }
+
+    .pre-works {
+        margin-inline: 10px;
+    }
+
+    .single-work {
+        display: block;
+        gap: 30px;
+        align-items: center;
+        margin-block: 30px;
+
+    }
+
+    .img-con {
+        text-align: center;
+    }
+
+    .work-img {
+        max-width: 130px;
+    }
+
+    .work-p {
+        margin-inline: 15px;
+    }
+    .p-text {
+        font-size: 14px;
+    }
+    .sec-three {
+        display: none;
+    }
+    .sec-four {
+        margin-inline: 10px;
+    }
+
+    .sec-four {
+        display: grid;
+        grid-template-columns: 80% 1fr;
+        margin-block: 15px;
+    }
 }
