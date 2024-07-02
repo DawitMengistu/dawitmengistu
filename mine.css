@@ -116,9 +116,11 @@
     background-color: #0F212E;
     margin-inline: 8px;
 }
+
 .mine-num-con:hover {
     cursor: pointer;
 }
+
 .mine-num-con {
     margin-block: 3px;
     margin-inline: 2px;
@@ -132,10 +134,12 @@
 .mine-num-active {
     background-color: #234055;
 }
+
 .play-btn-con {
-  width: 100%;
-  text-align: center;
+    width: 100%;
+    text-align: center;
 }
+
 .play-btn:hover {
     cursor: pointer;
     background-color: #355875;
@@ -146,7 +150,7 @@
     border: none;
     color: white;
     width: 93%;
-    background-color: #4287c0 ;
+    background-color: #4287c0;
     padding: 10px 5px;
     border-radius: 2px;
     margin-top: 10px;
@@ -174,5 +178,24 @@
 
     100% {
         transform: translateY(-2px);
+    }
+}
+
+@media screen and (max-width: 917px) {
+    .mine-game-con {
+        margin-inline: auto;
+        width: 95%;
+        height: auto;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: none;
+    }
+
+    .section-one-mine {
+        order: 2;
+    }
+
+    .section-two-mine {
+        order: 1;
     }
 }

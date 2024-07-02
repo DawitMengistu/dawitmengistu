@@ -8,7 +8,7 @@ gold.volume = 0.1;
 let mineNum = document.querySelectorAll(".mine-num-con");
 let playBtn = document.querySelector(".play-btn")
 let mineValArr = [1, 3, 5, 10];
-let mineVal = 23;
+let mineVal = 3;
 let num = getRandomNumbers(mineVal);
 
 playBtn.addEventListener("click", () => {

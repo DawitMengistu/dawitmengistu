@@ -40,3 +40,21 @@
     /* width: 90%;
     height: fit-content; */
 }
+
+@media screen and (max-width: 917px) {
+    .hide-gap {
+        display: none;
+    }
+    .tittle-bar {
+        height: 120px;
+    }
+    .tittle-img {
+        width: auto;
+        background-color: white;
+    }
+
+    .content {
+        margin: 10px;
+    }
+
+}

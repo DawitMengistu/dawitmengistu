@@ -76,3 +76,22 @@
     z-index: 1;
     rotate: 126.49deg;
 }
+
+@media screen and (max-width: 917px) {
+    .hide-gap {
+        display: none;
+    }
+    .tittle-text {
+        display: none;
+    }
+    .roulette-container {
+        left: 50%;
+        bottom: -80%;
+        width: 5%;
+    }
+
+    :root {
+        --width: 160px;
+    }
+
+}

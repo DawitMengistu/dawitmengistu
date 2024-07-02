@@ -113,9 +113,12 @@ a:hover {
 }
 
 .lato {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    /* font-family: 'Lato', Verdana, Helvetica, sans-serif; */
 }
-
+strong {
+    color: #342e32;
+}
 
 .italic {
     font-style: italic;
@@ -136,13 +139,16 @@ a:hover {
 
 .t-3 {
     padding-block: 14px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .t-4 {
     color: #242424;
     padding-block: 14px;
     font-size: 16px;
+    color: #837280;
+    font-size: .875rem;
+    line-height: 1.25rem;
 }
 
 .t-5 {
@@ -221,10 +227,21 @@ a:hover {
 
 .contact-a a {
     margin-inline: 5px;
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
 }
 
 .thoughts {
     text-align: end;
+}
+.thoughts a {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+}
+.ex-link{
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
 }
 
 .piano-con {
@@ -441,12 +458,15 @@ a:hover {
     .work-p {
         margin-inline: 15px;
     }
+
     .p-text {
         font-size: 14px;
     }
+
     .sec-three {
         display: none;
     }
+
     .sec-four {
         margin-inline: 10px;
     }
