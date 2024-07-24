@@ -1,0 +1,132 @@
+For weights in the hidden layer (w1, w2, w3, w4)
+Similar calculations are made to update the weights in the hidden layer. However, this time the chain becomes a bit longer. It does not matter how deep the neural network goes, all we need to find out is how much error is propagated (contributed) by a particular weight to the total error of the network. For that purpose, we need to find the partial derivative of Error w.r.t. to the particular weight. Let’s work on updating w1 and we’ll be able to generalize similar calculations to update the rest of the weights.
+
+For w1 (with respect to E1),
+
+For simplicity let us compute 
+∂
+𝐸
+1
+∂
+𝑤
+1
+∂w ∂E 1 and 
+∂
+𝐸
+2
+∂
+𝑤
+1
+∂w ∂E 2 separately, and later we can add them to compute 
+∂
+𝐸
+𝑡
+𝑜
+𝑡
+𝑎
+𝑙
+∂
+𝑤
+1
+∂w ∂E total.
+
+∂
+𝐸
+1
+∂
+𝑤
+1
+=
+∂
+𝐸
+1
+∂
+𝑜
+𝑢
+𝑡
+𝑝
+𝑢
+𝑡
+𝑜
+1
+∗
+∂
+𝑜
+𝑢
+𝑡
+𝑝
+𝑢
+𝑡
+𝑜
+1
+∂
+𝑠
+𝑢
+𝑚
+𝑜
+1
+∗
+∂
+𝑠
+𝑢
+𝑚
+𝑜
+1
+∂
+𝑜
+𝑢
+𝑡
+𝑝
+𝑢
+𝑡
+ℎ
+1
+∗
+∂
+𝑜
+𝑢
+𝑡
+𝑝
+𝑢
+𝑡
+ℎ
+1
+∂
+𝑠
+𝑢
+𝑚
+ℎ
+1
+∗
+∂
+𝑠
+𝑢
+𝑚
+ℎ
+1
+∂
+𝑤
+1
+∂w ∂E 1= 
+∂output 
+o1
+​
+ ∂E 1∗ 
+∂sum 
+o1
+​
+ ∂output o1∗ 
+∂output 
+h1
+​
+ ∂sum o1∗ 
+∂sum 
+h1
+​
+ ∂output h1∗ 
+∂w1
+∂sum 
+h1
+​
+ 
+​
