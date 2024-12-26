@@ -116,6 +116,7 @@ a:hover {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
     /* font-family: 'Lato', Verdana, Helvetica, sans-serif; */
 }
+
 strong {
     color: #342e32;
 }
@@ -233,10 +234,12 @@ strong {
 .thoughts {
     text-align: end;
 }
+
 .thoughts a {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
 }
-.ex-link{
+
+.ex-link {
     font-style: italic;
     font-size: 14px;
     font-weight: 600;
@@ -407,6 +410,9 @@ strong {
 .bb-gif {
     width: 80px;
     height: auto;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+
 }
 
 .links-con {
@@ -476,4 +482,44 @@ strong {
         grid-template-columns: 80% 1fr;
         margin-block: 15px;
     }
+
+
+}
+
+.hover-gem {
+    position: relative;
+}
+
+
+
+.dark-gem {
+    opacity: 0;
+    position: absolute;
+    top: 45px;
+    right: 55px;
+    background-color: #191919;
+    color: white;
+    width: auto;
+    transition: top 0.5s ease, opacity 0.5s ease;
+}
+
+.gem-text {
+    font-size: 15px;
+}
+
+.hover-gem:hover {
+    cursor: pointer;
+}
+
+.hover-gem:hover .bb-gif {
+    opacity: 0.1;
+    transition: opacity 0.5s ease;
+
+}
+
+.hover-gem:hover .dark-gem {
+
+    opacity: 1;
+    top: 35px;
+    transition: top 0.5s ease, opacity 0.5s ease;
 }
