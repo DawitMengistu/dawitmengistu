@@ -88,10 +88,30 @@ body {
     box-sizing: border-box;
 }
 
+.con-con {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.clients {
+    padding-left: 120px;
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.con-two {
+    max-width: 80%;
+    margin-inline: auto;
+
+}
+
 .con {
     max-width: 800px;
-    /* background-color: antiquewhite; */
     margin-inline: auto;
+
 }
 
 .gap {
