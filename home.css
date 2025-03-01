@@ -503,7 +503,14 @@ strong {
         margin-block: 15px;
     }
 
+    .clients {
+        padding: 0;
+    }
 
+    .con-con {
+        grid-template-columns: 1fr;
+
+    }
 }
 
 .hover-gem {
