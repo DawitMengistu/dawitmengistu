@@ -92,3 +92,5 @@ for (let i = 0; i < pianoKey.length; i++) {
         }
     })
 }
+
+console.log("Hey wellcome!");
